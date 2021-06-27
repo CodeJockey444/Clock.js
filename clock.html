@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock mate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="https://i2.wp.com/www.cssscript.com/wp-content/uploads/2020/07/Neumorphic-Style-Analog-Clock.png?fit=604%2C540&ssl=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="clock.css" />
+  </head>
+  <body>
+    <header>
+        <div class="container-fluid  text-secondary m-0 header-text p-5">
+          <h1 class="text-center text-white">Clock Mate</h1>
+        </div>
+      <ul class="nav justify-content-end p-3">
+        <li class="nav-item">
+          <a href="#" class="nav-link" id="nightBtn">
+            <i class="far fa-moon"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" id="dayBtn"> 
+            <i class="fas fa-sun"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" id="likeBtn">
+            <i class="far fa-heart"></i>
+          </a>   
+        </li>
+        <li class="nav-item">
+          <span class="badger">0</span>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <div class="clock-container">
+          <div class="clock">
+            <div class="time">
+              <h3 id="message" class="text-center"></h3>
+              <span id="time"></span>
+              <h5 id="greeting" class="text-center"></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="row p-5">
+        <div class="col-sm-12 col-lg-4">
+          <p class="coffee">Support me</p>
+          <a href="#" class="m-1"><i class="fas fa-donate"></i></a>
+          <a href="#" class="m-1"><i class="fab fa-patreon"></i></a>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <p>Follow me on:</p>
+          <a href="mailto:codejoceky444@gmail.com" class="m-1"><i class="fas fa-envelope-square"></i></a>
+          <a href="https://twitter.com/444Codejockey" class="m-1"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com" class="m-1"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="col-sm-12 col-lg-4 ">
+          <p>Contribute through gitHub</p>
+          <a href="#" class="m-1"><i class="fab fa-github"></i></a>
+          <a href="#" class="m-1"><i class="fas fa-code-branch"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="clock.js"></script>
+  </body>
+</html>

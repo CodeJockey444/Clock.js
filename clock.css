@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+:root {
+  --main-font: "Rochester", cursive;
+  --main-font-size: 5rem;
+  --sub-font-size: 2.1rem;
+  --color: rgb(41, 41, 41);
+  --background-color: #fbfaff;
+  --banner-bg:rgb(165, 81, 233);
+  --box-shadow: inset 9px 9px 18px #e4e4e8, inset -9px -9px 18px #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  background-color: var(--background-color);
+}
+.header-text {
+  background-color: var(--banner-bg) ;
+  margin-bottom: 0;
+  padding: 2rem;
+}
+::-webkit-scrollbar{
+  width:0.75vw;
+}
+::-webkit-scrollbar-thumb{background-color:rgb(54, 54, 54);border-radius:20px;}
+::-webkit-scrollbar-track{background-color: #fff;}
+.badger{
+  background-color: var(--banner-bg);
+  color:#fff;
+  border:2px solid rgb(165, 81, 233);
+  border-radius: 30px;
+  padding: 0.4rem;
+}
+h1,
+p {
+  color:var(--color);
+  font-family: var(--main-font);
+  font-size: var(--main-font-size);
+}
+p {
+  font-size: var(--sub-font-size);
+}
+
+a {
+  margin: 0.5rem;
+  padding: 1.2rem;
+  height: 3rem;
+  width: 3.5rem;
+  border-radius: 48%;
+  background: var(--background-color);
+  box-shadow: var(--box-shadow);
+  transition: 0.75s;
+}
+i {
+  font-size: 1.75rem;
+  color:var(--color);
+}
+i:hover {
+  color: rgb(165, 81, 233);
+}
+.clock-container {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  padding: 10vw;
+  height: 50vw;
+  width: 50vw;
+  border-radius: 50%;
+  background: var(--background-color);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#time,#message,#greeting{
+  font-family: var(--main-font);
+  font-size: var(--main-font-size);
+  color:rgb(165, 81, 233);
+}
+#message{font-size: 3rem;}
+#greeting{font-size: var(--sub-font-size);}
+footer {
+  height: 30vh;
+  padding: 2vw;
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
